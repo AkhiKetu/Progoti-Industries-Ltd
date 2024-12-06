@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="551.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progotiindustriesltd.progotiindustriesltd.ShowRepSalesInfoViewController">
+
+    <!-- Header Section -->
+    <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Product Options for Customer" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="10" />
+
+    <!-- Customer Preferences Section -->
+    <HBox prefHeight="25.0" prefWidth="487.0" spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="50">
+        <Label text="Customer Preferences:" />
+        <TextField editable="false" prefHeight="25.0" prefWidth="185.0" promptText="Search your preference model" style="-fx-opacity: 0.8;" />
+        <Button text="Retrieve Preferences" />
+    </HBox>
+
+    <!-- Product Filters Section -->
+    <HBox spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="100">
+        <Label text="Filter by Price Range:" />
+        <TextField promptText="Min Price" />
+        <TextField promptText="Max Price" />
+        <Button text="Apply Filters" />
+    </HBox>
+
+    <!-- Product List Section -->
+    <Label style="-fx-font-weight: bold;" text="Product Options:" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="150" />
+
+    <TableView prefHeight="300" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="180">
+        <columns>
+            <TableColumn prefWidth="139.99999523162842" text="Product Name" />
+            <TableColumn prefWidth="177.3333282470703" text="Category" />
+            <TableColumn minWidth="0.0" prefWidth="138.0" text="Price" />
+            <TableColumn prefWidth="123.33334350585938" text="Stock" />
+        </columns>
+    </TableView>
+
+    <!-- Mark and Log Section -->
+    <HBox spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="500">
+        <Button text="Mark for Recommendation" />
+        <Button text="Log Viewed Products" />
+    </HBox>
+
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progotiindustriesltd.progotiindustriesltd.KnowCustomerLikeSalesInfoViewController">
+
+    <!-- Header Section -->
+    <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Know Customer Likes" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="10" />
+
+    <!-- View Customer History Section -->
+    <HBox spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="50">
+        <Label text="View Customer History:" />
+        <Button text="View Past Interactions" />
+    </HBox>
+
+    <!-- Gather Customer Feedback Section -->
+    <HBox spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="100">
+        <Label text="Gather Feedback:" />
+        <TextArea prefHeight="138.0" prefWidth="479.0" promptText="Ask customer about their preferences and interests..." style="-fx-opacity: 0.8;" wrapText="true" />
+        <Button text="Submit Feedback" />
+    </HBox>
+
+    <!-- Input Customer Preferences Section -->
+    <HBox layoutX="10.0" layoutY="247.66666666666666" spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="247.66666666666666">
+        <Label text="Input Likes into System:" />
+        <TextField prefHeight="25.0" prefWidth="197.0" promptText="e.g., Favorite products, Categories" style="-fx-opacity: 0.8;" />
+        <Button text="Save Preferences" />
+    </HBox>
+
+    <!-- Validate Preferences Section -->
+    <HBox layoutX="10.0" layoutY="279.0" spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="279.0">
+        <Label text="Validate Preferences:" />
+        <Button text="Check Consistency" />
+    </HBox>
+
+    <!-- Update Customer Profile Section -->
+    <HBox layoutX="10.0" layoutY="314.3333333333333" spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="314.3333333333333">
+        <Label text="Update Customer Profile:" />
+        <Button text="Update Profile" />
+    </HBox>
+
+    <!-- Analyze Likes for Trends Section -->
+    <HBox spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="350">
+        <Label text="Analyze Likes for Trends:" />
+        <Button text="Analyze Trends" />
+    </HBox>
+
+    <!-- Use Likes for Future Interactions Section -->
+    <HBox layoutX="10.0" layoutY="397.0" spacing="10" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="397.0">
+        <Label text="Use Likes for Future Interactions:" />
+        <Button text="Use for Personalized Marketing" />
+    </HBox>
+
+    <!-- Status Section (at the bottom) -->
+    <Label style="-fx-text-fill: green;" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="450" />
+
+</AnchorPane>
